@@ -1,20 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 
-* {
-    margin: 0;
-}
-
 html {
     font-family: Open Sans, sans-serif;
 }
 
 .main {
     position: relative;
-}
-
-div {
-    width: 1000px;
-    margin: 0px auto;
 }
 
 .header {

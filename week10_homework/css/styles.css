@@ -9,11 +9,6 @@ html {
     padding-bottom: 70px;
 }
 
-div {
-    width: 1000px;
-    margin: 0px auto;
-}
-
 .header {
     display: flex;
     margin-left: auto;

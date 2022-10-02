@@ -17,14 +17,6 @@ html {
     height: 140px;
 }
 
-/* .header h3 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    width: 95%;
-} */
-
 .subtitle {
     width: 95%;
     margin-left: auto;
@@ -42,13 +34,13 @@ html {
 }
 
 .flex-first-map {
-    flex: 2.5;
+    flex: 2;
     margin: 10px;
     padding: 20px;
 }
 
 .flex-second-map {
-    flex: 1;
+    flex: 1.5;
     margin: 10px;
     padding: 20px;
 }

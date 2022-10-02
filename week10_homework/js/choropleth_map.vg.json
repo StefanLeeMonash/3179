@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Mental Health in Tech (2014)",
     "width": 1200,
     "height": 800,
     "projection": {

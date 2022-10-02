@@ -16,6 +16,14 @@ html {
     width: 95%;
 }
 
+.header p {
+    display: flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 95%;
+}
+
 h1 {
     position: relative;
     text-align: center;
@@ -26,7 +34,7 @@ h1 {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    align-self: center;
     text-align: center;
 }
 

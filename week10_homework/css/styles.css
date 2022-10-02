@@ -4,7 +4,7 @@ html {
     font-family: Open Sans, sans-serif;
 }
 
-main {
+.main {
     position: relative;
     padding-top: 60px;
     padding-bottom: 70px;
@@ -15,16 +15,16 @@ div {
     margin: 0px auto;
 }
 
-header {
-    display: flexbox;
+.header {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     width: 95%;
 }
 
-header p {
-    display: flexbox;
+.header .p {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;

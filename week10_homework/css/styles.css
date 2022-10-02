@@ -7,3 +7,10 @@ html {
 .main {
     position: relative;
 }
+
+.header {
+    display: flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}

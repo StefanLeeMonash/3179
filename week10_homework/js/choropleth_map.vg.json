@@ -73,7 +73,7 @@
                 },
                 "color": {
                   "field": "normalised",
-                  "title": "Number who sought treatment",
+                  "title": "Percentage who sought treatment",
                   "type": "quantitative",
                   "scale": {
                     "scheme": "blues"
@@ -86,7 +86,7 @@
                         "title": "Country"
                     },
                     {
-                        "field": "normalised", "type": "quantitative", "title": "Number who sought treatment", "format": ".2f"
+                        "field": "normalised", "type": "quantitative", "title": "Percentage who sought treatment", "format": ".2f"
                     }
                 ]
             }

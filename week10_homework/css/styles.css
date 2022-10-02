@@ -16,7 +16,7 @@ html {
     width: 95%;
 }
 
-.header p {
+.header h3 {
     display: flex;
     margin-left: auto;
     margin-right: auto;

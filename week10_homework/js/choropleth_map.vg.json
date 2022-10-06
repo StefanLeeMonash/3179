@@ -91,7 +91,7 @@
                   "title": "Percentage who sought treatment",
                   "type": "quantitative",
                   "scale": {
-                    "scheme": "tealblues"
+                    "scheme": "oranges"
                   }
                 },
                   "tooltip": [

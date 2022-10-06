@@ -17,13 +17,13 @@
             <h1 class="center">Mental Health in Tech</h1>
             <!-- <p>Analysing attitude towards mental health and its frequency in the tech workplace</p> -->
         </div>
-        <p class="subtitle">Visualisation 1</p>
+        <p class="subtitle"><strong>Percentage</strong> of those who sought treatment by <strong>Gender</strong></p>
         <div class="flex-container">
             <div class="flex-first">
                 <p class="flex-center">Dummy Text.</p>
             </div>
             <div class="flex-second">
-                <div id="bubble"></div>
+                <div id="interactive_bar"></div>
             </div>
         </div>
         <p class="subtitle"><strong>Percentage</strong> of people who <strong>sought</strong> treatment in <strong>2014</strong>
@@ -41,6 +41,9 @@
 </body>
 
 <script>
+    var bar = "js/interactive_bar.vg.json";
+    vegaEmbed('#interactive_bar', bar).then(function (result) {
+           }).catch(console.error);
     var choropleth = "js/choropleth_map.vg.json";
     vegaEmbed('#choropleth_map', choropleth).then(function (result) {
            }).catch(console.error);

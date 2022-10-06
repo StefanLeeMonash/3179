@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 100,
+    "data": {
+        "url": "https://raw.githubusercontent.com/StefanLeeMonash/3179/main/week10_homework/data/gender.csv"
+    },
+    "transform": [
+        {"filter": "Year_selection == null || datum.year == Year_selection"},
+        {
+    "calculate": "datum.treatment/datum.totals * 100",
+    "as": "PercentOfTotal"
+  }],
+  "params":[
+        {
+            "name": "gender_highlight",
+            "select": {"type": "point", "fields": ["Gender"]},
+            "bind": "legend"
+        },
+        {
+            "name": "Year_selection",
+            "value": 2016,
+            "bind": {
+                "input": "range",
+                "min": 2016,
+                "max": 2018,
+                "step": 1,
+                "name": "Year Selection: "
+        }
+    }
+    ],
+    "mark": "bar",
+    "encoding": {
+        "y": { "field": "Gender", "type": "nominal" },
+        "x": { "field": "PercentOfTotal", "title": "Percentage %", "type": "quantitative", "scale": {"domain" : [0, 100]}},  
+        "color": {
+            "field": "Gender",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Female",
+                    "Male",
+                    "Other"
+                ],
+                "range": [
+                    "#e41a1c",
+                    "#377eb8",
+                    "#ff7f00"
+                ]
+            }
+        },     
+        "opacity": {
+            "condition": {"param": "gender_highlight", "value": 0.8},
+            "value": 0.2
+            },
+
+        "tooltip": [
+                    {
+                        "field": "Gender",
+                        "type": "nominal",
+                        "title": "Gender"
+                    },
+                    {
+                        "field": "PercentOfTotal", "type": "quantitative", "title": "Percentage who sought treatment", "format": ".0f"
+                    }
+                ]
+            } 
+}

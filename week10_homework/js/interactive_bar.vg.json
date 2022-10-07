@@ -35,8 +35,8 @@
             "type": "nominal",
             "scale": {
                 "domain": [
-                    "Female",
                     "Male",
+                    "Female",
                     "Other"
                 ],
                 "range": [
@@ -65,6 +65,21 @@
         "mark": {
         "type": "text",
         "align": "left",
+        "dx": 30,
+        "dy": 0
+    },
+    "encoding": {
+        "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+        "opacity": {
+            "condition": {"test": "datum['Gender'] == 'Male'", "value": 1},
+            "value": 0
+        }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
         "dx": 77,
         "dy": -32.5
     },
@@ -72,21 +87,6 @@
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
           "condition": {"test": "datum['Gender'] == 'Female'", "value": 1},
-          "value": 0
-      }
-    }
-    },
-    {
-        "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": 30,
-        "dy": 0
-    },
-    "encoding": {
-      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
-      "opacity": {
-          "condition": {"test": "datum['Gender'] == 'Male'", "value": 1},
           "value": 0
       }
     }

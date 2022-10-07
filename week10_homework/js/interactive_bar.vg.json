@@ -28,7 +28,7 @@
     {
     "mark": "bar",
     "encoding": {
-        "y": { "field": "Gender", "type": "nominal" },
+        "y": { "field": "Gender", "type": "nominal", "sort": "x" },
         "x": { "field": "PercentOfTotal", "title": "Percentage %", "type": "quantitative", "scale": {"domain" : [0, 100]}},  
         "color": {
             "field": "Gender",
@@ -40,8 +40,8 @@
                     "Other"
                 ],
                 "range": [
-                    "#984ea3",
                     "#377eb8",
+                    "#984ea3",
                     "#ff7f00"
                 ]
             }
@@ -66,7 +66,7 @@
         "type": "text",
         "align": "left",
         "dx": 30,
-        "dy": 0
+        "dy": -33
     },
     "encoding": {
         "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
@@ -81,7 +81,7 @@
         "type": "text",
         "align": "left",
         "dx": 77,
-        "dy": -32.5
+        "dy": 0
     },
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},

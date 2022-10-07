@@ -47,3 +47,10 @@ html {
 .pure-g {
     margin-bottom: 40px;
 }
+
+.center {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

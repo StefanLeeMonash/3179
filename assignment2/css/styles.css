@@ -65,3 +65,11 @@ html {
     padding-bottom: 10px;
     text-align: center;
 }
+
+#interactive-bar {
+    padding-top: 20px;
+}
+
+#interactive-vertical {
+    padding-top: 20px;
+}

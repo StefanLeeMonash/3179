@@ -18,6 +18,8 @@ html {
     font-family: Open Sans;
     height: 140px;
     opacity: 0.8;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .subtitle {

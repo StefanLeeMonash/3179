@@ -30,14 +30,12 @@ html {
     background-color: #F7EEDD;
     padding-top: 10px;
     font-size: 18pt;
-    color: #B6B5B1;
 }
 
 .page {
     width: 1000px;
     margin: auto;
     padding: 50px;
-    padding-top: 20px;
     background-color: #FBF8F1;
 }
 

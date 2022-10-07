@@ -35,7 +35,6 @@ html {
 .page {
     width: 1000px;
     margin: auto;
-    padding: 50px;
     background-color: #FBF8F1;
 }
 
@@ -65,6 +64,7 @@ html {
     padding-bottom: 10px;
     padding-left: 100px;
     padding-right: 100px;
+    font-family: Open Sans;
 }
 
 .header-subtitle {

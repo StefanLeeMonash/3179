@@ -54,3 +54,10 @@ html {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.header-subtitle {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}

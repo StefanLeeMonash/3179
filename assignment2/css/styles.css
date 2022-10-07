@@ -20,6 +20,10 @@ html {
     text-align: center;
 }
 
+.pure-g #head {
+    padding: 0%;
+}
+
 .subtitle {
     margin-left: auto;
     margin-right: auto;
@@ -35,6 +39,7 @@ html {
 .page {
     width: 1000px;
     margin: auto;
+    padding: 50px;
     background-color: #FBF8F1;
 }
 

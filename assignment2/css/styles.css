@@ -18,7 +18,6 @@ html {
     font-family: Open Sans;
     height: 140px;
     text-align: center;
-    padding-top: 20px;
 }
 
 .subtitle {
@@ -30,6 +29,7 @@ html {
     background-color: #F7EEDD;
     padding-top: 10px;
     font-size: 18pt;
+    font-family: Open Sans;
 }
 
 .page {
@@ -45,10 +45,12 @@ html {
 
 .description-left {
     padding-right: 100px;
+    font-family: Open Sans;
 }
 
 .description-right {
     padding-left: 20px;
+    font-family: Open Sans;
 }
 
 .pure-g {

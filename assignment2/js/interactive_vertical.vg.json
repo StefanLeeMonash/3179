@@ -2,6 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 200,
     "height": 200,
+    "background": "#FBF8F1",
     "data": {
         "url": "https://raw.githubusercontent.com/StefanLeeMonash/3179/main/assignment2/data/age.csv"
     },

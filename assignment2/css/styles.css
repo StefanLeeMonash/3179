@@ -23,7 +23,6 @@ html {
     padding-bottom: 10px;
     background-color: #F7EEDD;
     padding-top: 20px;
-    margin-bottom: 40px;
 }
 
 .page {
@@ -47,6 +46,7 @@ html {
 }
 
 .pure-g {
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 

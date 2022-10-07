@@ -32,6 +32,7 @@
         "y": { "field": "PercentOfTotal", "title": "Percentage %", "type": "quantitative", "scale": {"domain" : [0, 100]}},  
         "color": {
             "field": "age",
+            "title": "Age range",
             "type": "nominal",
             "scale": {
                 "domain": [

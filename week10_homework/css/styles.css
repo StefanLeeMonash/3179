@@ -37,7 +37,7 @@ html {
 }
 
 .description-left {
-    padding-right: 40px;
+    padding-right: 100px;
 }
 
 .description-right {
@@ -53,8 +53,8 @@ html {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header-subtitle {

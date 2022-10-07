@@ -1,0 +1,144 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 200,
+    "height": 200,
+    "data": {
+        "url": "https://raw.githubusercontent.com/StefanLeeMonash/3179/main/assignment2/data/age.csv"
+    },
+    "transform": [
+        {"filter": "Year_selection == null || datum.year == Year_selection"},
+        {
+    "calculate": "datum.treatment/datum.total * 100",
+    "as": "PercentOfTotal"
+  }],
+  "params":[
+        {
+            "name": "Year_selection",
+            "value": 2016,
+            "bind": {
+                "input": "range",
+                "min": 2016,
+                "max": 2018,
+                "step": 1,
+                "name": "Year Selection: "
+        }
+    }
+    ],
+    "layer": [
+    {
+    "mark": "bar",
+    "encoding": {
+        "x": { "field": "age", "title": "Age", "type": "nominal" },
+        "y": { "field": "PercentOfTotal", "title": "Percentage %", "type": "quantitative", "scale": {"domain" : [0, 100]}},  
+        "color": {
+            "field": "age",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "15-27",
+                    "28-39",
+                    "40-52",
+                    "53-64",
+                    "65-77"
+                ],
+                "range": [
+                    "#ffafcc",
+                    "#fee440",
+                    "#023047",
+                    "#a65628",
+                    "#a6cee3"
+                ]
+            }
+        },     
+        "opacity": {
+            "value": 0.8
+        },
+        "tooltip": [
+                    {
+                        "field": "age",
+                        "type": "nominal",
+                        "title": "Age"
+                    },
+                    {
+                        "field": "PercentOfTotal", "type": "quantitative", "title": "Percentage who sought treatment", "format": ".0f"
+                    }
+                ]
+            }
+        },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -86,
+        "dy": -32.5
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['age'] == '15-27'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -46,
+        "dy": -35
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['age'] == '28-39'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -6,
+        "dy": -35
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['age'] == '40-52'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 34,
+        "dy": -45
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['age'] == '53-64'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 72,
+        "dy": -105
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['age'] == '65-77'", "value": 1},
+          "value": 0
+      }
+    }
+    }
+    ] 
+}

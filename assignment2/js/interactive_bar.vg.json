@@ -1,0 +1,110 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 100,
+    "data": {
+        "url": "https://raw.githubusercontent.com/StefanLeeMonash/3179/main/week10_homework/data/gender.csv"
+    },
+    "transform": [
+        {"filter": "Year_selection == null || datum.year == Year_selection"},
+        {
+    "calculate": "datum.treatment/datum.totals * 100",
+    "as": "PercentOfTotal"
+  }],
+  "params":[
+        {
+            "name": "Year_selection",
+            "value": 2016,
+            "bind": {
+                "input": "range",
+                "min": 2016,
+                "max": 2018,
+                "step": 1,
+                "name": "Year Selection: "
+        }
+    }
+    ],
+    "layer": [
+    {
+    "mark": "bar",
+    "encoding": {
+        "y": { "field": "Gender", "type": "nominal" },
+        "x": { "field": "PercentOfTotal", "title": "Percentage %", "type": "quantitative", "scale": {"domain" : [0, 100]}},  
+        "color": {
+            "field": "Gender",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Male",
+                    "Female",
+                    "Other"
+                ],
+                "range": [
+                    "#984ea3",
+                    "#377eb8",
+                    "#ff7f00"
+                ]
+            }
+        },     
+        "opacity": {
+            "value": 0.8
+        },
+        "tooltip": [
+                    {
+                        "field": "Gender",
+                        "type": "nominal",
+                        "title": "Gender"
+                    },
+                    {
+                        "field": "PercentOfTotal", "type": "quantitative", "title": "Percentage who sought treatment", "format": ".0f"
+                    }
+                ]
+            }
+        },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 30,
+        "dy": 0
+    },
+    "encoding": {
+        "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+        "opacity": {
+            "condition": {"test": "datum['Gender'] == 'Male'", "value": 1},
+            "value": 0
+        }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 77,
+        "dy": -32.5
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['Gender'] == 'Female'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 135,
+        "dy": 35
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum['Gender'] == 'Other'", "value": 1},
+          "value": 0
+      }
+    }
+    }
+    ] 
+}

@@ -23,6 +23,7 @@ html {
     align-self: center;
     text-align: center;
     padding-bottom: 10px;
+    background-color: #FAEDCD;
 }
 
 .page {
@@ -30,6 +31,7 @@ html {
     margin: auto;
     padding: 50px;
     padding-top: 35px;
+    background-color: #FEFAE0;
 }
 
 .vis-container {

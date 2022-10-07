@@ -13,6 +13,8 @@ html {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    font-size: 48pt;
+    background-color: #D4A373;
 }
 
 .subtitle {
@@ -22,7 +24,8 @@ html {
     text-align: center;
     padding-bottom: 10px;
     background-color: #F7EEDD;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-size: 18pt;
 }
 
 .page {

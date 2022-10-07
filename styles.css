@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+html {
+    font-family: Open Sans, sans-serif;
+}
+
+.main {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-size: 48pt;
+    background-color: rgba(212,163,115,0.8);
+    font-family: Open Sans;
+    height: 140px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #F7EEDD;
+    padding-top: 10px;
+    font-size: 18pt;
+    font-family: Open Sans;
+}
+
+.page {
+    width: 1000px;
+    margin: auto;
+    padding: 50px;
+    background-color: #FBF8F1;
+}
+
+.vis-container {
+    width: 100%;
+}
+
+.description-left {
+    padding-right: 100px;
+}
+
+.description-right {
+    padding-left: 20px;
+}
+
+.pure-g {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.center {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header-subtitle {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#interactive-bar {
+    padding-top: 20px;
+}
+
+.p {
+    font-family: Open Sans;
+}

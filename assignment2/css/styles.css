@@ -46,7 +46,7 @@ html {
 
 .vis-container-1 {
     width: 100%;
-    padding-left: 70px;
+    /* padding-left: 70px; */
 }
 
 .vis-container-2 {
@@ -65,7 +65,7 @@ html {
 
 .description-right {
     font-family: Open Sans;
-    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 60px;
 }
 

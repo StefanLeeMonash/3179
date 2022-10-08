@@ -52,6 +52,7 @@ html {
 .vis-container-2 {
     width: 100%;
     padding-top: 35px;
+    padding-left: 50px;
 }
 
 .vis-container-3 {
@@ -63,10 +64,17 @@ html {
     padding-right: 100px;
 }
 
-.description-right {
+.description-right-1 {
     font-family: Open Sans;
-    padding-right: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-top: 60px;
+}
+
+.description-right-2 {
+    font-family: Open Sans;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .pure-g #info {

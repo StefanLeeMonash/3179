@@ -60,12 +60,12 @@ html {
 
 .description-left {
     font-family: Open Sans;
-    padding-right: 100px;
+    padding-left: 80px;
 }
 
 .description-right {
     font-family: Open Sans;
-    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 60px;
 }
 

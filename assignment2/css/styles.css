@@ -46,12 +46,13 @@ html {
 
 .vis-container-1 {
     width: 100%;
-    /* padding-left: 70px; */
+    padding-left: 50px;
 }
 
 .vis-container-2 {
     width: 100%;
     padding-top: 35px;
+    padding-left: 50px;
 }
 
 .vis-container-3 {

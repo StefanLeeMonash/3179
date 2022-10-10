@@ -25,7 +25,7 @@
         "color": {
           "field": "Comfortability",
           "type": "nominal",
-          "scale": {"range": ["#F4E409", "#FFC300", "#A44200", "#FF6D00"]}
+          "scale": {"range": ["#FF6D00", "#F4E409", "#FFC300", "#A44200"]}
         },
         "tooltip": [
           {

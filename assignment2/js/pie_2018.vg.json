@@ -50,8 +50,8 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "dx": 11,
-        "dy": -130,
+        "dx": 140,
+        "dy": 16,
         "fontSize": 11.5
       },
       "encoding": {
@@ -70,8 +70,8 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "dx": 90,
-        "dy": -110,
+        "dx": 125,
+        "dy": 80,
         "fontSize": 11.5
       },
       "encoding": {
@@ -90,8 +90,7 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "dx": 35,
-        "dy": 135,
+        "dx": -135,
         "fontSize": 11.5
       },
       "encoding": {
@@ -110,8 +109,8 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "dx": -110,
-        "dy": -75,
+        "dx": 110,
+        "dy": -95,
         "fontSize": 11.5
       },
       "encoding": {

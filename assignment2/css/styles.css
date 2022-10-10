@@ -111,19 +111,19 @@ html {
 }
 
 .first {
-    background-color: #FAE409;
-}
-
-.second {
-    background-color: #FF6D00;
-}
-
-.third {
     background-color: #FFC300;
 }
 
+.second {
+    background-color: #A44200;
+}
+
+.third {
+    background-color: #F4E409;
+}
+
 .forth {
-    background-color: #FFEA00;
+    background-color: #FF6D00;
 }
 
 .square {

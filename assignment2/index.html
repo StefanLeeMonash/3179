@@ -53,16 +53,36 @@
               <div id="choropleth_map" class="vis-container-3"></div>
             </div>
         </div>
-        <p class="subtitle">Visualisation 4.</p>
-        <div id="info" class="pure-g">
-            <div class="pure-u-1-2">
-                <div class="description description-left">
-                    <p>Dummy Text.</p>
-                </div>
+        <p class="subtitle">Number of people <strong>comfortable</strong> talking about their <strong>health</strong> between <strong>2017</strong> and <strong>2019</strong></p>
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+              <div id="pie2017" class="vis-container-3"></div>
             </div>
-            <!-- <div class="pure-u-1-2">
-                <div id="interactive_bar" class="vis-container-2"></div>
-            </div> -->
+            <div class="pure-u-2-3">
+                <div id="pie2018" class="vis-container"></div>
+            </div>
+            <div class="pure-u-2-3">
+                <div id="pie2019" class="vis-container"></div>
+            </div>
+        </div>
+        <p class = "legend-title">Comfortability</p>
+        <div class = "legend-box">
+            <div class = "box">
+                <div class = "first square"></div>
+                <span>Mental Health</span>
+            </div>
+            <div class = "box">
+                <div class = "second square"></div>
+                <span>Physical Health</span>
+            </div>
+            <div class = "box">
+                <div class = "third square"></div>
+                <span>Same level of comfort</span>
+            </div>
+            <div class = "box">
+                <div class = "forth square"></div>
+                <span>Neither</span>
+            </div>
         </div>
     </div>
 </body>
@@ -76,6 +96,15 @@
            }).catch(console.error);
     var choropleth = "js/choropleth_map.vg.json";
     vegaEmbed('#choropleth_map', choropleth).then(function (result) {
+           }).catch(console.error);
+    var pie1 = "js/pie_2017.vg.json";
+    vegaEmbed('#pie2017', pie1).then(function (result) {
+           }).catch(console.error);
+    var pie2 = "js/pie_2018.vg.json";
+    vegaEmbed('#pie2018', pie2).then(function (result) {
+           }).catch(console.error);
+    var pie3 = "js/pie_2019.vg.json";
+    vegaEmbed('#pie2019', pie3).then(function (result) {
            }).catch(console.error);
 </script>
 

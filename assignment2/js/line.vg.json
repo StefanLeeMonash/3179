@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#FBF8F1",
+    "data": {"url": "https://raw.githubusercontent.com/StefanLeeMonash/3179/main/assignment2/data/willingness.csv"},
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"timeUnit": "year", "field": "year", "title": "Year"},
+      "y": {"aggregate":"mean", "field": "Willingness", "type": "quantitative", "title": "Average willigness"},
+      "color": {"field": "resources", "type": "nominal", "title": "Employers",
+      "scale": {
+                  "domain": [
+                      "All",
+                      "None",
+                      "Some"
+                  ],
+                  "range": [
+                      "#117733",
+                      "#44aa99",
+                      "#332288"
+                  ]
+              }
+            },
+      "tooltip": [
+        {"field": "year", "timeUnit": "year", "title": "Year"},
+        {
+          "field": "Willingness",
+          "aggregate": "mean",
+          "type": "quantitative",
+          "title": "Average willingness",
+          "format": ".2f"
+        }
+      ]
+    }
+  }
+  

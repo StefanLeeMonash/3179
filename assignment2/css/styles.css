@@ -59,9 +59,14 @@ html {
     width: 100%;
 }
 
+.vis-container-4 {
+    width: 100%;
+}
+
 .description-left {
     font-family: Open Sans;
     padding-right: 50px;
+    padding-left: 50px;
 }
 
 .description-right-1 {
@@ -111,7 +116,7 @@ html {
 }
 
 .first {
-    background-color: #FFC300;
+    background-color: #F4E409;
 }
 
 .second {
@@ -119,11 +124,11 @@ html {
 }
 
 .third {
-    background-color: #F4E409;
+    background-color: #FF6D00;
 }
 
 .forth {
-    background-color: #FF6D00;
+    background-color: #FFC300;
 }
 
 .square {

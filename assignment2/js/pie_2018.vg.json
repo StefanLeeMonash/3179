@@ -1,0 +1,121 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 250,
+    "background": "#FBF8F1",
+    "data": {
+      "values": [
+        {"Comfortability": "Physical health", "Count": 240},
+        {"Comfortability": "Mental health", "Count": 7},
+        {"Comfortability": "Same level of comfort for each", "Count": 114},
+        {"Comfortability": "Neither", "Count": 56}
+      ]
+    },
+    "config": {"legend": {"disable": true}},
+    "layer": [
+      {
+        "mark": {
+          "type": "arc",
+          "padAngle": 0.01,
+          "innerRadius": 105,
+          "cornerRadius": 5
+        },
+        "encoding": {
+          "theta": {"field": "Count", "type": "quantitative"},
+          "color": {
+            "field": "Comfortability",
+            "type": "nominal",
+            "scale": {
+              "range": [
+                "#F4E409",
+                "#FFEA00",
+                "#FF6D00",
+                "#FFC300"
+              ]
+            }
+          },
+          "tooltip": [
+            {"field": "Comfortability", "type": "nominal", "title": "Comfortability in sharing"},
+            {"field": "Count", "type": "quantitative", "title": "Count"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "middle",
+          "fontSize": 36
+        },
+        "encoding": {"text": {"value": "2018"}}
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx": 11,
+          "dy": -130,
+          "fontSize": 11.5
+        },
+        "encoding": {
+          "text": {"field": "Count", "type": "quantitative"},
+          "color": {"value": "#F4E409"},
+          "opacity": {
+            "condition": {"test": "datum['Comfortability'] == 'Mental health'", "value": 1},
+            "value": 0
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx": 90,
+          "dy": -110,
+          "fontSize": 11.5
+        },
+        "encoding": {
+          "text": {"field": "Count", "type": "quantitative"},
+          "color": {"value": "#FFEA00"},
+          "opacity": {
+            "condition": {"test": "datum['Comfortability'] == 'Neither'", "value": 1},
+            "value": 0
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx": 35,
+          "dy": 135,
+          "fontSize": 11.5
+        },
+        "encoding": {
+          "text": {"field": "Count", "type": "quantitative"},
+          "color": {"value": "#FF6D00"},
+          "opacity": {
+            "condition": {"test": "datum['Comfortability'] == 'Physical health'", "value": 1},
+            "value": 0
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx": -110,
+          "dy": -75,
+          "fontSize": 11.5
+        },
+        "encoding": {
+          "text": {"field": "Count", "type": "quantitative"},
+          "color": {"value": "#FFC300"},
+          "opacity": {
+            "condition": {"test": "datum['Comfortability'] == 'Same level of comfort for each'", "value": 1},
+            "value": 0
+          }
+        }
+      }
+    ]
+  }

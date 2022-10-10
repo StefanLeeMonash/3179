@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class="pure-u-1-2">
-              <div id="vis1" class="vis-container-4"></div>
+              <div id="line" class="vis-container-4"></div>
             </div>
           </div>
     </div>
@@ -117,6 +117,9 @@
            }).catch(console.error);
     var pie3 = "js/pie_2019.vg.json";
     vegaEmbed('#pie2019', pie3).then(function (result) {
+           }).catch(console.error);
+    var line = "js/line.vg.json";
+    vegaEmbed('#line', line).then(function (result) {
            }).catch(console.error);
 </script>
 

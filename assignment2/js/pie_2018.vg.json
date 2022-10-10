@@ -7,7 +7,7 @@
       "values": [
         {"Comfortability": "Physical health", "Count": 240},
         {"Comfortability": "Mental health", "Count": 7},
-        {"Comfortability": "Same level of comfort for each", "Count": 114},
+        {"Comfortability": "Both", "Count": 114},
         {"Comfortability": "Neither", "Count": 56}
       ]
     },
@@ -27,10 +27,10 @@
             "type": "nominal",
             "scale": {
               "range": [
+                "#A44200",
+                "#FFC300",
                 "#F4E409",
-                "#FFEA00",
-                "#FF6D00",
-                "#FFC300"
+                "#FF6D00"
               ]
             }
           },
@@ -59,7 +59,7 @@
         },
         "encoding": {
           "text": {"field": "Count", "type": "quantitative"},
-          "color": {"value": "#F4E409"},
+          "color": {"value": "#FFC300"},
           "opacity": {
             "condition": {"test": "datum['Comfortability'] == 'Mental health'", "value": 1},
             "value": 0
@@ -76,7 +76,7 @@
         },
         "encoding": {
           "text": {"field": "Count", "type": "quantitative"},
-          "color": {"value": "#FFEA00"},
+          "color": {"value": "#FF6D00"},
           "opacity": {
             "condition": {"test": "datum['Comfortability'] == 'Neither'", "value": 1},
             "value": 0
@@ -93,7 +93,7 @@
         },
         "encoding": {
           "text": {"field": "Count", "type": "quantitative"},
-          "color": {"value": "#FF6D00"},
+          "color": {"value": "#A44200"},
           "opacity": {
             "condition": {"test": "datum['Comfortability'] == 'Physical health'", "value": 1},
             "value": 0
@@ -110,9 +110,9 @@
         },
         "encoding": {
           "text": {"field": "Count", "type": "quantitative"},
-          "color": {"value": "#FFC300"},
+          "color": {"value": "#F4E409"},
           "opacity": {
-            "condition": {"test": "datum['Comfortability'] == 'Same level of comfort for each'", "value": 1},
+            "condition": {"test": "datum['Comfortability'] == 'Both'", "value": 1},
             "value": 0
           }
         }

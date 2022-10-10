@@ -8,7 +8,7 @@
         {"Comfortability": "Physical health", "Count": 209},
         {"Comfortability": "Mental health", "Count": 2},
         {"Comfortability": "Both", "Count": 93},
-        {"Comfortability": "Neither", "Count": 14}
+        {"Comfortability": "Neither", "Count": 48}
       ]
     },
     "config": {"legend": {"disable": true}},
@@ -25,14 +25,14 @@
           "color": {
             "field": "Comfortability",
             "type": "nominal",
-            "scale": {
-              "range": [
-                "#F4E409", "#FFC300", "#A44200", "#FF6D00"
-              ]
-            }
+            "scale": {"range": ["#F4E409", "#FFC300", "#A44200", "#FF6D00"]}
           },
           "tooltip": [
-            {"field": "Comfortability", "type": "nominal", "title": "Comfortability in sharing"},
+            {
+              "field": "Comfortability",
+              "type": "nominal",
+              "title": "Comfortability in sharing"
+            },
             {"field": "Count", "type": "quantitative", "title": "Count"}
           ]
         }
@@ -50,7 +50,7 @@
         "mark": {
           "type": "text",
           "align": "right",
-          "dx": 6,
+          "dx": 11,
           "dy": -130,
           "fontSize": 11.5
         },
@@ -58,7 +58,10 @@
           "text": {"field": "Count", "type": "quantitative"},
           "color": {"value": "#F4E409"},
           "opacity": {
-            "condition": {"test": "datum['Comfortability'] == 'Mental health'", "value": 1},
+            "condition": {
+              "test": "datum['Comfortability'] == 'Mental health'",
+              "value": 1
+            },
             "value": 0
           }
         }
@@ -67,15 +70,18 @@
         "mark": {
           "type": "text",
           "align": "right",
-          "dx": 30,
-          "dy": -128,
+          "dx": 90,
+          "dy": -110,
           "fontSize": 11.5
         },
         "encoding": {
           "text": {"field": "Count", "type": "quantitative"},
           "color": {"value": "#FFC300"},
           "opacity": {
-            "condition": {"test": "datum['Comfortability'] == 'Neither'", "value": 1},
+            "condition": {
+              "test": "datum['Comfortability'] == 'Neither'",
+              "value": 1
+            },
             "value": 0
           }
         }
@@ -92,7 +98,10 @@
           "text": {"field": "Count", "type": "quantitative"},
           "color": {"value": "#A44200"},
           "opacity": {
-            "condition": {"test": "datum['Comfortability'] == 'Physical health'", "value": 1},
+            "condition": {
+              "test": "datum['Comfortability'] == 'Physical health'",
+              "value": 1
+            },
             "value": 0
           }
         }
@@ -109,7 +118,10 @@
           "text": {"field": "Count", "type": "quantitative"},
           "color": {"value": "#FF6D00"},
           "opacity": {
-            "condition": {"test": "datum['Comfortability'] == 'Both'", "value": 1},
+            "condition": {
+              "test": "datum['Comfortability'] == 'Both'",
+              "value": 1
+            },
             "value": 0
           }
         }

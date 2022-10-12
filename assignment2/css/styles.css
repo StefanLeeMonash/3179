@@ -152,3 +152,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+.small {
+    font-size: 14pt;
+}

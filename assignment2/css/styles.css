@@ -165,6 +165,7 @@ html {
 }
 
 .filter {
-    padding-left: 50px;
-    font-size: 10pt;
+    padding-left: 100px;
+    font-family: Open sans;
+    font-size: 8pt;
 }

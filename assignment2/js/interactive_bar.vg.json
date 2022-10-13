@@ -66,13 +66,43 @@
         "mark": {
         "type": "text",
         "align": "left",
-        "dx": 30,
+        "dx": 11,
         "dy": -33
     },
     "encoding": {
         "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
         "opacity": {
-            "condition": {"test": "datum['Gender'] == 'Male'", "value": 1},
+            "condition": {"test": "datum.Gender == 'Male' && datum.year == 2016", "value": 1},
+            "value": 0
+        }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 14,
+        "dy": -33
+    },
+    "encoding": {
+        "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+        "opacity": {
+            "condition": {"test": "datum.Gender == 'Male' && datum.year == 2017", "value": 1},
+            "value": 0
+        }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 24,
+        "dy": -33
+    },
+    "encoding": {
+        "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+        "opacity": {
+            "condition": {"test": "datum.Gender == 'Male' && datum.year == 2018", "value": 1},
             "value": 0
         }
     }
@@ -87,7 +117,7 @@
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['Gender'] == 'Female'", "value": 1},
+          "condition": {"test": "datum.Gender == 'Female' && datum.year == 2016"},
           "value": 0
       }
     }
@@ -96,13 +126,73 @@
         "mark": {
         "type": "text",
         "align": "left",
-        "dx": 135,
+        "dx": 70,
+        "dy": 0
+    },
+    "encoding": {
+        "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+        "opacity": {
+            "condition": {"test": "datum.Gender == 'Female' && datum.year == 2017", "value": 1},
+            "value": 0
+        }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 75,
+        "dy": 0
+    },
+    "encoding": {
+        "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+        "opacity": {
+            "condition": {"test": "datum.Gender == 'Female' && datum.year == 2018", "value": 1},
+            "value": 0
+        }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 97,
         "dy": 35
     },
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['Gender'] == 'Other'", "value": 1},
+          "condition": {"test": "datum.Gender == 'Other' && datum.year == 2016"},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 137,
+        "dy": 35
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.Gender == 'Other' && datum.year == 2017"},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 82,
+        "dy": 35
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.Gender == 'Other' && datum.year == 2018"},
           "value": 0
       }
     }

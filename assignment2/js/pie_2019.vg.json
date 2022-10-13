@@ -20,6 +20,14 @@
           "innerRadius": 105,
           "cornerRadius": 5
         },
+        "params": [
+          {"name": "hover", 
+            "select": {
+              "type": "point", 
+              "on": "mouseover"
+              }
+            }
+        ],
         "encoding": {
           "theta": {"field": "Count", "type": "quantitative"},
           "color": {
@@ -34,7 +42,8 @@
               "title": "Comfortability in sharing"
             },
             {"field": "Count", "type": "quantitative", "title": "Count"}
-          ]
+          ],
+          "fillOpacity": {"condition": {"param": "hover", "value": 1}, "value": 0.3}
         }
       },
       {

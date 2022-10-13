@@ -163,3 +163,8 @@ html {
     font-family: Open Sans;
     padding-left: 10px;
 }
+
+.filter {
+    padding-left: 50px;
+    font-size: 10pt;
+}

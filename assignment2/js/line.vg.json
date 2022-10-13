@@ -16,7 +16,7 @@
   "encoding": {
     "x": {"timeUnit": "year", "field": "year", "title": "Year"},
     "y": {"aggregate":"mean", "field": "Willingness", "type": "quantitative", "title": "Average willigness"},
-    "color": {"field": "resources", "type": "nominal", "title": "Employers",
+    "color": {"field": "resources", "type": "nominal", "title": "Resources",
     "scale": {
                 "domain": [
                     "All",

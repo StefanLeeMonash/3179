@@ -71,13 +71,73 @@
         "mark": {
         "type": "text",
         "align": "left",
-        "dx": -86,
+        "dx": -87,
         "dy": -32.5
     },
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['age'] == '15-27'", "value": 1},
+          "condition": {"test": "datum.year == 2016 && datum.age == '15-27'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -87,
+        "dy": -22
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2018 && datum.age == '15-27'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -87,
+        "dy": -14
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2017 && datum.age == '15-27'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -46,
+        "dy": -22
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2016 && datum.age == '28-39'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -46,
+        "dy": -29
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2017 && datum.age == '28-39'", "value": 1},
           "value": 0
       }
     }
@@ -92,7 +152,37 @@
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['age'] == '28-39'", "value": 1},
+          "condition": {"test": "datum.year == 2018 && datum.age == '28-39'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -6,
+        "dy": -18
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2016 && datum.age == '40-52'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -6,
+        "dy": -29
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2017 && datum.age == '40-52'", "value": 1},
           "value": 0
       }
     }
@@ -107,7 +197,7 @@
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['age'] == '40-52'", "value": 1},
+          "condition": {"test": "datum.year == 2018 && datum.age == '40-52'", "value": 1},
           "value": 0
       }
     }
@@ -116,13 +206,43 @@
         "mark": {
         "type": "text",
         "align": "left",
-        "dx": 34,
+        "dx": 33,
+        "dy": -29
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2016 && datum.age == '53-64'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 33,
+        "dy": -40
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2017 && datum.age == '53-64'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 33,
         "dy": -45
     },
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['age'] == '53-64'", "value": 1},
+          "condition": {"test": "datum.year == 2018 && datum.age == '53-64'", "value": 1},
           "value": 0
       }
     }
@@ -131,13 +251,43 @@
         "mark": {
         "type": "text",
         "align": "left",
-        "dx": 72,
+        "dx": 70,
         "dy": -105
     },
     "encoding": {
       "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
       "opacity": {
-          "condition": {"test": "datum['age'] == '65-77'", "value": 1},
+          "condition": {"test": "datum.year == 2017 && datum.age == '65-77'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 74,
+        "dy": -67
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2016 & datum.age == '65-77'", "value": 1},
+          "value": 0
+      }
+    }
+    },
+    {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 70,
+        "dy": -105
+    },
+    "encoding": {
+      "text": {"field": "PercentOfTotal", "type": "quantitative", "format": ".0f"},
+      "opacity": {
+          "condition": {"test": "datum.year == 2018 && datum.age == '65-77'", "value": 1},
           "value": 0
       }
     }

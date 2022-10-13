@@ -69,9 +69,6 @@
         <p class="legend-title">Comfortability</p>
         <div class="legend-box">
             <div class = "box">
-                <div class = "first square"></div>
-                <span>Mental Health</span>
-            </div>
             <div class = "box">
                 <div class = "second square"></div>
                 <span>Physical Health</span>
@@ -84,17 +81,21 @@
                 <div class = "forth square"></div>
                 <span>Neither</span>
             </div>
+            <div class = "first square"></div>
+                <span>Mental Health</span>
+            </div>
         </div>
         <p class="subtitle"><strong>Average</strong> willingness to share mental illness depending whether past employers provided health <strong>resources</strong></p>
         <div class="pure-g">
             <div class="pure-u-1-2">
               <div class="description description-left">
-                <p>As expected, individuals whose past employers provided them with mental health resources experienced the highest average willingness to share the fact that they were suffering from a mental illness. However, they also experienced the lowest average willingness during 2017 and 2021 which is very unexpected and unusual. Overall, the data shows that the provision of health resources had a minimal effect on the willingness of individuals to speak out.</p>
+                <p>As expected, individuals where all past employers provided them with mental health resources experienced the highest average willingness to share the fact that they were suffering from a mental illness. However, they also experienced the lowest average willingness during 2017 and 2021 which is very unexpected and unusual. Overall, the data shows that the provision of health resources had a minimal effect on the willingness of individuals to speak out.</p>
               </div>
             </div>
             <div class="pure-u-1-2">
               <div id="line" class="vis-container-4"></div>
             </div>
+            <p class="filter">*Click on the legend to filter by resources provided.</p>
           </div>
           <p class="footer">This visualisation is created by Stefan FIT3179.</p>
     </div>
@@ -102,25 +103,25 @@
 
 <script>
     var vertical = "js/interactive_vertical.vg.json";
-    vegaEmbed('#interactive_vertical', vertical).then(function (result) {
+    vegaEmbed('#interactive_vertical', vertical, {"actions": false}).then(function (result) {
            }).catch(console.error);
     var bar = "js/interactive_bar.vg.json";
-    vegaEmbed('#interactive_bar', bar).then(function (result) {
+    vegaEmbed('#interactive_bar', bar, {"actions": false}).then(function (result) {
            }).catch(console.error);
     var choropleth = "js/choropleth_map.vg.json";
-    vegaEmbed('#choropleth_map', choropleth).then(function (result) {
+    vegaEmbed('#choropleth_map', choropleth, {"actions": false}).then(function (result) {
            }).catch(console.error);
     var pie1 = "js/pie_2017.vg.json";
-    vegaEmbed('#pie2017', pie1).then(function (result) {
+    vegaEmbed('#pie2017', pie1, {"actions": false}).then(function (result) {
            }).catch(console.error);
     var pie2 = "js/pie_2018.vg.json";
-    vegaEmbed('#pie2018', pie2).then(function (result) {
+    vegaEmbed('#pie2018', pie2, {"actions": false}).then(function (result) {
            }).catch(console.error);
     var pie3 = "js/pie_2019.vg.json";
-    vegaEmbed('#pie2019', pie3).then(function (result) {
+    vegaEmbed('#pie2019', pie3, {"actions": false}).then(function (result) {
            }).catch(console.error);
     var line = "js/line.vg.json";
-    vegaEmbed('#line', line).then(function (result) {
+    vegaEmbed('#line', line, {"actions": false}).then(function (result) {
            }).catch(console.error);
 </script>
 

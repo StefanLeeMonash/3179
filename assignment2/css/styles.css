@@ -168,3 +168,12 @@ html {
     font-family: Open sans;
     font-size: 10pt;
 }
+
+.filter-2 {
+    font-family: Open sans;
+    font-size: 10pt;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

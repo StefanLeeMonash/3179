@@ -116,19 +116,19 @@ html {
     margin-right: 15px;
 }
 
-.first {
+.forth {
     background-color: #F4E409;
 }
 
-.second {
+.first {
     background-color: #A44200;
 }
 
-.third {
+.second {
     background-color: #FF6D00;
 }
 
-.forth {
+.third {
     background-color: #FFC300;
 }
 
@@ -165,7 +165,7 @@ html {
 }
 
 .filter {
-    padding-left: 100px;
+    padding-left: 50px;
     font-family: Open sans;
     font-size: 8pt;
 }
